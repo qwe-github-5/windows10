@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guessing Game</title>
+</head>
+<body>
+    <h1>Welcome to the Guessing Game!</h1>
+    <form action="/start" method="post">
+        <input type="number" name="top_of_range" placeholder="Enter a number" required>
+        <button type="submit">Start Game</button>
+    </form>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
